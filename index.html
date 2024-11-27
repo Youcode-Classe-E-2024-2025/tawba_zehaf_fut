@@ -27,23 +27,18 @@
             Welcome to the Squad Builder!
         </div>
 
-        <div class="flex justify-evenly items-center flex-row gap-5">
-            <!-- Formation Container -->
-            <div class="mt-14 w-2/3 h-full items-center flex flex-col justify-center bg-gray-200 rounded-lg shadow-lg">
-                <div id="formationContainer" class="grid grid-rows-3 grid-cols-4 gap-2 items-center justify-center w-full h-full p-4">
-                    <!-- Player Cards... -->
-                </div>
-                <div data-pos="GK" class="emptyCard player bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4 col-span-4">
-                    <span class="icon-[gg--add] text-4xl text-pink-400"></span>
-                    <p class="font-bold">GK</p>
-                </div>
+        <div class="flex gap-5 items-start">
+            <!-- Formation Container (Larger Field) -->
+            <div id="formationContainer" class="relative flex-grow h-[600px] w-[800px] bg-white p-4 border-4 border-gray-800 rounded-lg">
+                <img src="FUT-Champ-Ultimate-Team-Assets/images/field.svg" class="absolute inset-0 w-full h-full object-cover" alt="Field">
+                <!-- Player Cards can be dynamically added here -->
             </div>
 
             <!-- Squad Info Section -->
-            <div class="rounded w-1/4 h-1/2 bg-gray-800 text-white p-4 flex flex-col gap-2 items-center">
+            <div class="w-1/4 h-full bg-gray-800 text-white p-4 flex flex-col gap-2 rounded-lg">
                 <h2 class="text-2xl">SQUAD INFO</h2>
                 <p>FORMATION</p>
-                <select class="bg-gray-700 w-1/2 text-pink-400 rounded" name="formation" id="formationSelect">
+                <select class="bg-gray-700 w-full text-pink-400 rounded" name="formation" id="formationSelect">
                     <option value="4-4-2">4-4-2</option>
                     <option value="4-3-3">4-3-3</option>
                 </select>
@@ -125,7 +120,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-pink-400 p-8">
+    <footer class="bg-gradient-to-r from-purple-400 to-pink-400">
         <div class="grid grid-cols-3 gap-8">
             <div>
                 <h2 class="text-lg font-bold mb-2">LATEST SQUADS</h2>
