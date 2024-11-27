@@ -1,253 +1,178 @@
-
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   FIFA Tactics and Formations Builder
-  </title>
-  <!-- <script src="https://cdn.tailwindcss.com">
-  </script> -->
-  <link rel="stylesheet" href="./css/output.css">
-  <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   FIFA Tactics and Formations Builder
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Roboto', sans-serif;
-        }
-  </style>
- </head>
- <body class="bg-gray-100">
-  <header class="bg-blue-600 text-white p-4">
-   <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-2xl font-bold">
-     FIFA Tactics Builder
-    </h1>
-    <nav>
-     <ul class="flex space-x-4">
-      <li>
-       <a class="hover:underline" href="#">
-        Home
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        Tactics
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        Formations
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        Players
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        Community
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </div>
-  </header>
-  <main class="container mx-auto mt-8">
-   <section class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-xl font-bold mb-4">
-     Create Your Tactic
-    </h2>
-    <form class="space-y-4">
-     <div>
-      <label class="block text-sm font-medium text-gray-700" for="formation">
-       Formation
-      </label>
-      <select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="formation" name="formation">
-       <option>
-        4-4-2
-       </option>
-       <option>
-        4-3-3
-       </option>
-       <option>
-        3-5-2
-       </option>
-       <option>
-        4-2-3-1
-       </option>
-      </select>
-     </div>
-     <div>
-      <label class="block text-sm font-medium text-gray-700" for="tactic-name">
-       Tactic Name
-      </label>
-      <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="tactic-name" name="tactic-name" type="text"/>
-     </div>
-     <div>
-      <label class="block text-sm font-medium text-gray-700" for="description">
-       Description
-      </label>
-      <textarea class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="description" name="description" rows="4"></textarea>
-     </div>
-     <button class="bg-blue-600 text-white px-4 py-2 rounded-md" type="submit">
-      Save Tactic
-     </button>
-    </form>
-   </section>
-   <section class="mt-8">
-    <h2 class="text-xl font-bold mb-4">
-     Popular Tactics
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-     <div class="bg-white p-4 rounded-lg shadow-md">
-      <img alt="A detailed image of a 4-4-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/442.jpg" width="300"/>
-      <h3 class="text-lg font-bold mt-2">
-       4-4-2 Classic
-      </h3>
-      <p class="text-gray-600">
-       A balanced formation with a strong midfield presence.
-      </p>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md">
-      <img alt="A detailed image of a 4-3-3 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/443.jpg" width="300"/>
-      <h3 class="text-lg font-bold mt-2">
-       4-3-3 Attack
-      </h3>
-      <p class="text-gray-600">
-       An attacking formation with three forwards.
-      </p>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md">
-      <img alt="A detailed image of a 3-5-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/352.jpg" width="300"/>
-      <h3 class="text-lg font-bold mt-2">
-       3-5-2 Control
-      </h3>
-      <p class="text-gray-600">
-       A formation that focuses on midfield control.
-      </p>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md">
-      <img alt="A detailed image of a 4-2-3-1 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/4231.jpg" width="300"/>
-      <h3 class="text-lg font-bold mt-2">
-       4-2-3-1 Defensive
-      </h3>
-      <p class="text-gray-600">
-       A defensive formation with two holding midfielders.
-      </p>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md">
-      <img alt="A detailed image of a 4-1-2-1-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/41212.jpg" width="300"/>
-      <h3 class="text-lg font-bold mt-2">
-       4-1-2-1-2 Narrow
-      </h3>
-      <p class="text-gray-600">
-       A narrow formation with a diamond midfield.
-      </p>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md">
-      <img alt="A detailed image of a 5-3-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/532.jpg" width="300"/>
-      <h3 class="text-lg font-bold mt-2">
-       5-3-2 Counter
-      </h3>
-      <p class="text-gray-600">
-       A defensive formation with a focus on counter-attacks.
-      </p>
-     </div>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>FIFA Tactics and Formations Builder</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="bg-gradient-to-r from-purple-400 to-pink-400">
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="w-full h-full fixed bg-gray-800 bg-opacity-0 z-50 flex items-center justify-center">
+        <span class="icon-[iconoir--soccer-ball] text-green-400 text-6xl animate-spin"></span>
     </div>
-   </section>
-   <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-xl font-bold mb-4">
-     Formation Builder
-    </h2>
-    <div class="relative bg-green-500 h-96 rounded-lg">
-     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-4 gap-4 w-full h-full p-4">
-      <div class="col-span-4 flex justify-center items-center">
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         GK
-        </span>
-       </div>
-      </div>
-      <div class="col-span-4 flex justify-between items-center">
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         LB
-        </span>
-       </div>
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         CB
-        </span>
-       </div>
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         CB
-        </span>
-       </div>
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         RB
-        </span>
-       </div>
-      </div>
-      <div class="col-span-4 flex justify-between items-center">
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         LM
-        </span>
-       </div>
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         CM
-        </span>
-       </div>
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         CM
-        </span>
-       </div>
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         RM
-        </span>
-       </div>
-      </div>
-      <div class="col-span-4 flex justify-between items-center">
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         ST
-        </span>
-       </div>
-       <div class="bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center">
-        <span class="text-sm font-bold">
-         ST
-        </span>
-       </div>
-      </div>
-     </div>
+
+    <!-- Header Section -->
+    <header class="w-full bg-gray-800 text-white font-bold px-4 py-2 text-xl flex items-center justify-between">
+        <h1><span class="text-pink-400">FUT</span> SQUAD BUILDER</h1>
+        <div class="flex gap-6 justify-between">
+            <span id="openAllHeader" class="icon-[mingcute--list-check-fill] cursor-pointer hover:text-pink-400 transition"></span>
+            <span id="openAddHeader" class="icon-[mingcute--user-add-fill] cursor-pointer hover:text-pink-400 transition"></span>
+        </div>
+    </header>
+
+    <main class="p-6">
+        <div class="bg-pink-400 text-white text-lg text-center py-2 rounded-lg mb-6">
+            Welcome to the Squad Builder!
+        </div>
+
+        <div class="flex justify-evenly items-center flex-row gap-5">
+            <!-- Formation Container -->
+            <div class="mt-14 w-2/3 h-full items-center flex flex-col justify-center bg-gray-200 rounded-lg shadow-lg">
+                <div id="formationContainer" class="grid grid-rows-3 grid-cols-4 gap-2 items-center justify-center w-full h-full p-4">
+                    <!-- Player Cards... -->
+                </div>
+                <div data-pos="GK" class="emptyCard player bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4 col-span-4">
+                    <span class="icon-[gg--add] text-4xl text-pink-400"></span>
+                    <p class="font-bold">GK</p>
+                </div>
+            </div>
+
+            <!-- Squad Info Section -->
+            <div class="rounded w-1/4 h-1/2 bg-gray-800 text-white p-4 flex flex-col gap-2 items-center">
+                <h2 class="text-2xl">SQUAD INFO</h2>
+                <p>FORMATION</p>
+                <select class="bg-gray-700 w-1/2 text-pink-400 rounded" name="formation" id="formationSelect">
+                    <option value="4-4-2">4-4-2</option>
+                    <option value="4-3-3">4-3-3</option>
+                </select>
+                <p>TOTAL CHEMISTRY</p>
+                <p class="text-pink-400">100%</p>
+            </div>
+        </div>
+
+        <!-- Add Player Section -->
+        <div class="bg-gray-800 text-white p-4 mt-6 rounded-lg">
+            <h2 class="text-2xl font-bold text-center mb-4">ADD A PLAYER</h2>
+            <form class="flex flex-col gap-4" id="addPlayerForm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex flex-col">
+                        <label for="playerName">Player Name</label>
+                        <select id="playerName" class="p-2 bg-gray-700 rounded" required>
+                            <!-- Player options will be dynamically loaded here -->
+                        </select>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="playerPosition">Position</label>
+                        <select name="playerPosition" id="playerPosition" class="p-2 bg-gray-700 rounded" required>
+                            <option value="ST">ST</option>
+                            <option value="CM">CM</option>
+                            <option value="LM">LM</option>
+                            <option value="RM">RM</option>
+                            <option value="LB">LB</option>
+                            <option value="RB">RB</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-pink-400 text-white py-2 rounded">Add Player</button>
+            </form>
+        </div>
+
+        <!-- Substitutions Section -->
+        <div class="flex items-center justify-start gap-6 mt-36 p-2 flex-wrap">
+            <h2 class="text-white text-2xl font-semibold w-full text-center">SUBSTITUTIONS</h2>
+            <div class="m-0 player col-start-3 row-start-1 bottom-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4">
+                <span class="icon-[gg--add] text-4xl text-pink-400"></span>
+            </div>
+        </div>
+
+    </main>
+    <section class="mt-8">
+        <h2 class="text-xl font-bold mb-4">Popular Tactics</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="A detailed image of a 4-4-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/442.jpg" width="300"/>
+                <h3 class="text-lg font-bold mt-2">4-4-2 Classic</h3>
+                <p class="text-gray-600">A balanced formation with a strong midfield presence.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="A detailed image of a 4-3-3 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/443.jpg" width="300"/>
+                <h3 class="text-lg font-bold mt-2">4-3-3 Attack</h3>
+                <p class="text-gray-600">An attacking formation with three forwards.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="A detailed image of a 3-5-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/352.jpg" width="300"/>
+                <h3 class="text-lg font-bold mt-2">3-5-2 Control</h3>
+                <p class="text-gray-600">A formation that focuses on midfield control.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="A detailed image of a 4-2-3-1 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/4231.jpg" width="300"/>
+                <h3 class="text-lg font-bold mt-2">4-2-3-1 Defensive</h3>
+                <p class="text-gray-600">A defensive formation with two holding midfielders.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="A detailed image of a 4-1-2-1-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/41212.jpg" width="300"/>
+                <h3 class="text-lg font-bold mt-2">4-1-2-1-2 Narrow</h3>
+                <p class="text-gray-600">A narrow formation with a diamond midfield.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="A detailed image of a 5-3-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/532.jpg" width="300"/>
+                <h3 class="text-lg font-bold mt-2">5-3-2 Counter</h3>
+                <p class="text-gray-600">A defensive formation with a focus on counter-attacks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-400 p-8">
+        <div class="grid grid-cols-3 gap-8">
+            <div>
+                <h2 class="text-lg font-bold mb-2">LATEST SQUADS</h2>
+                <ul>
+                    <li>FC Pro</li>
+                    <li>Team Of The Week 10</li>
+                    <li>Track Stars</li>
+                    <li>Team Of The Week 9</li>
+                    <li>Ballon d'Or</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold mb-2">USEFUL LINKS</h2>
+                <ul>
+                    <li>Squad Builder</li>
+                    <li>SBC</li>
+                    <li>EA FC 25 Players</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold mb-2">FUTBIN APPLICATIONS</h2>
+                <ul>
+                    <li><i class="fas fa-android"></i> FUTBIN For Android</li>
+                    <li><i class="fas fa-apple"></i> FUTBIN For IOS</li>
+                    <li>More Details</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-sm">
+            <p>© 2014-2024 Copyright FUTBIN.com All FIFA assets are property of EA Sports.</p>
+            <p>
+                <a href="#" class="text-white">TOS</a> | 
+                <a href="#" class="text-white">Privacy Policy</a> | 
+                <a href="#" class="text-white">Cookie Policy</a> | 
+                <a href="#" class="text-white">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Social Media Icons -->
+    <div class="bg-gray-800 p-4 flex justify-center space-x-4">
+        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
     </div>
-   </section>
-  </main>
-  <footer class="bg-blue-600 text-white p-4 mt-8">
-   <div class="container mx-auto text-center">
-    <p>
-     © 2023 FIFA Tactics Builder. All rights reserved.
-    </p>
-   </div>
-  </footer>
-  <script src="script.js">
-  </script>
- </body>
+    <script src="script.js"></script>
+</body>
 </html>
- 

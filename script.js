@@ -1,41 +1,40 @@
-const players = [
-    { position: 'GK', name: 'Goalkeeper' },
-    { position: 'LB', name: 'Left Back' },
-    { position: 'CB', name: 'Center Back' },
-    { position: 'CB', name: 'Center Back' },
-    { position: 'RB', name: 'Right Back' },
-    { position: 'LM', name: 'Left Midfield' },
-    { position: 'CM', name: 'Center Midfield' },
-    { position: 'CM', name: 'Center Midfield' },
-    { position: 'RM', name: 'Right Midfield' },
-    { position: 'ST', name: 'Striker' },
-    { position: 'ST', name: 'Striker' }
-];
 
-function renderPlayers() {
-    const field = document.querySelector('.relative .grid');
-    field.innerHTML = '';
-    players.forEach(player => {
-        const playerDiv = document.createElement('div');
-        playerDiv.className = 'bg-white p-2 rounded-full w-12 h-12 flex justify-center items-center';
-        playerDiv.innerHTML = `<span class="text-sm font-bold">${player.position}</span>`;
-        field.appendChild(playerDiv);
+// Fetch JSON data from a file
+let playersData = [];
+fetch('players.json')  // Replace with your actual JSON file path
+    .then(response => response.json())
+    .then(data => {
+        playersData = data;
+        populatePlayerNames();
+    })
+    .catch(error => console.error('Error loading players JSON:', error));
+
+// Populate the player dropdown from the JSON
+function populatePlayerNames() {
+    const playerSelect = document.getElementById('playerName');
+    playersData.forEach(player => {
+        const option = document.createElement('option');
+        option.value = player.name;
+        option.textContent = player.name;
+        playerSelect.appendChild(option);
     });
 }
 
-function addPlayer(position, name) {
-    players.push({ position, name });
-    renderPlayers();
-}
+// Handle Add Player form submission
+document.getElementById("addPlayerForm").onsubmit = function (e) {
+    e.preventDefault();
+    const playerName = document.getElementById("playerName").value;
+    const playerPosition = document.getElementById("playerPosition").value;
 
-function removePlayer(position) {
-    const index = players.findIndex(player => player.position === position);
-    if (index !== -1) {
-        players.splice(index, 1);
-        renderPlayers();
+    // Find the selected player from the JSON data
+    const selectedPlayer = playersData.find(player => player.name === playerName);
+
+    if (selectedPlayer) {
+        // Update the player position with the selected player
+        const playerCard = document.querySelector(`[data-pos="${playerPosition}"]`);
+        if (playerCard) {
+            playerCard.innerHTML = `<p class="font-bold">${selectedPlayer.name}</p>`;
+            playerCard.classList.add("player-added");
+        }
     }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    renderPlayers();
-});
+};
