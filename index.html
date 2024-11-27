@@ -6,7 +6,7 @@
     <title>FIFA Tactics and Formations Builder</title>
     <link rel="stylesheet" href="./css/output.css">
 </head>
-<body class="bg-gradient-to-r from-purple-400 to-pink-400">
+<body class="bg-gradient-to-r from-blue-700 to-blue-300">
 
     <!-- Loading Screen -->
     <div id="loadingScreen" class="w-full h-full fixed bg-gray-800 bg-opacity-0 z-50 flex items-center justify-center">
@@ -23,19 +23,15 @@
     </header>
 
     <main class="p-6">
-        <div class="bg-pink-400 text-white text-lg text-center py-2 rounded-lg mb-6">
+        <div class="bg-blue-700 text-white text-lg text-center py-2 rounded-lg mb-6">
             Welcome to the Squad Builder!
         </div>
 
         <div class="flex gap-5 items-start">
             <!-- Formation Container (Larger Field) -->
-            <div id="formationContainer" class="relative flex-grow h-[600px] w-[800px] bg-white p-4 border-4 border-gray-800 rounded-lg">
-                <img src="FUT-Champ-Ultimate-Team-Assets/images/field.svg" class="absolute inset-0 w-full h-full object-cover" alt="Field">
-                <!-- Player Cards can be dynamically added here -->
-            </div>
-
+            <div id="formationContainer" class="relative grid grid-cols-4 grid-rows-10 bg-contain bg-no-repeat bg-[url('/FUT-Champ-Ultimate-Team-Assets/images/field.svg')] h-[600px] w-[800px]">
             <!-- Squad Info Section -->
-            <div class="w-1/4 h-full bg-gray-800 text-white p-4 flex flex-col gap-2 rounded-lg">
+            <div class="w-1/4 h-full bg-blue-900 text-white p-4 flex flex-col gap-2 rounded-lg">
                 <h2 class="text-2xl">SQUAD INFO</h2>
                 <p>FORMATION</p>
                 <select class="bg-gray-700 w-full text-pink-400 rounded" name="formation" id="formationSelect">
@@ -74,7 +70,7 @@
             </form>
         </div>
 
-        <!-- Substitutions Section -->
+        Substitutions Section
         <div class="flex items-center justify-start gap-6 mt-36 p-2 flex-wrap">
             <h2 class="text-white text-2xl font-semibold w-full text-center">SUBSTITUTIONS</h2>
             <div class="m-0 player col-start-3 row-start-1 bottom-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4">
@@ -119,55 +115,76 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gradient-to-r from-purple-400 to-pink-400">
-        <div class="grid grid-cols-3 gap-8">
-            <div>
-                <h2 class="text-lg font-bold mb-2">LATEST SQUADS</h2>
-                <ul>
-                    <li>FC Pro</li>
-                    <li>Team Of The Week 10</li>
-                    <li>Track Stars</li>
-                    <li>Team Of The Week 9</li>
-                    <li>Ballon d'Or</li>
-                </ul>
+    <footer class="bg-gradient-to-r from-purple-500 to-pink-500 py-10">
+        <div class="container mx-auto px-4">
+            <!-- Footer Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Latest Squads Section -->
+                <div>
+                    <h2 class="text-white text-xl font-semibold mb-4">LATEST SQUADS</h2>
+                    <ul class="space-y-2 text-gray-200">
+                        <li class="hover:text-white cursor-pointer transition">FC Pro</li>
+                        <li class="hover:text-white cursor-pointer transition">Team Of The Week 10</li>
+                        <li class="hover:text-white cursor-pointer transition">Track Stars</li>
+                        <li class="hover:text-white cursor-pointer transition">Team Of The Week 9</li>
+                        <li class="hover:text-white cursor-pointer transition">Ballon d'Or</li>
+                    </ul>
+                </div>
+    
+                <!-- Useful Links Section -->
+                <div>
+                    <h2 class="text-white text-xl font-semibold mb-4">USEFUL LINKS</h2>
+                    <ul class="space-y-2 text-gray-200">
+                        <li class="hover:text-white cursor-pointer transition">Squad Builder</li>
+                        <li class="hover:text-white cursor-pointer transition">SBC</li>
+                        <li class="hover:text-white cursor-pointer transition">EA FC 25 Players</li>
+                    </ul>
+                </div>
+    
+                <!-- FUTBIN Applications Section -->
+                <div>
+                    <h2 class="text-white text-xl font-semibold mb-4">FUTBIN APPLICATIONS</h2>
+                    <ul class="space-y-2 text-gray-200">
+                        <li class="hover:text-white cursor-pointer transition"><i class="fas fa-android text-pink-400"></i> FUTBIN For Android</li>
+                        <li class="hover:text-white cursor-pointer transition"><i class="fas fa-apple text-pink-400"></i> FUTBIN For IOS</li>
+                        <li class="hover:text-white cursor-pointer transition">More Details</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h2 class="text-lg font-bold mb-2">USEFUL LINKS</h2>
-                <ul>
-                    <li>Squad Builder</li>
-                    <li>SBC</li>
-                    <li>EA FC 25 Players</li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="text-lg font-bold mb-2">FUTBIN APPLICATIONS</h2>
-                <ul>
-                    <li><i class="fas fa-android"></i> FUTBIN For Android</li>
-                    <li><i class="fas fa-apple"></i> FUTBIN For IOS</li>
-                    <li>More Details</li>
-                </ul>
+    
+            <!-- Footer Bottom Section -->
+            <div class="mt-8 text-center text-gray-200 text-sm">
+                <p>© 2014-2024 Copyright FUTBIN.com. All FIFA assets are property of EA Sports.</p>
+                <p class="mt-4">
+                    <a href="#" class="hover:text-pink-400 transition">TOS</a> | 
+                    <a href="#" class="hover:text-pink-400 transition">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-pink-400 transition">Cookie Policy</a> | 
+                    <a href="#" class="hover:text-pink-400 transition">Contact</a>
+                </p>
             </div>
         </div>
-        <div class="mt-8 text-center text-sm">
-            <p>© 2014-2024 Copyright FUTBIN.com All FIFA assets are property of EA Sports.</p>
-            <p>
-                <a href="#" class="text-white">TOS</a> | 
-                <a href="#" class="text-white">Privacy Policy</a> | 
-                <a href="#" class="text-white">Cookie Policy</a> | 
-                <a href="#" class="text-white">Contact</a>
-            </p>
+    
+        <!-- Social Media Icons -->
+        <div class="bg-purple-400 py-4">
+            <div class="container mx-auto flex justify-center space-x-6">
+                <a href="#" class="text-black hover:text-pink-400 transition">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+                <a href="#" class="text-black hover:text-pink-400 transition">
+                    <i class="fab fa-facebook text-2xl"></i>
+                </a>
+                <a href="#" class="text-black hover:text-pink-400 transition">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                <a href="#" class="text-black hover:text-pink-400 transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-black hover:text-pink-400 transition">
+                    <i class="fab fa-tiktok text-2xl"></i>
+                </a>
+            </div>
         </div>
     </footer>
-
-    <!-- Social Media Icons -->
-    <div class="bg-gray-800 p-4 flex justify-center space-x-4">
-        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
