@@ -1,4 +1,6 @@
-const element = document.querySelector('.banc');
+fetch('./players.json').then((response) => response.json()).then((json) => localStorage.setItem("players",JSON.stringify(json)));
+let players = JSON.parse(localStorage.data).players;
+  const element = document.querySelector('.banc');
 
 let scrollAnimation = element.animate(
   [
