@@ -1,190 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>FIFA Tactics and Formations Builder</title>
-    <link rel="stylesheet" href="./css/output.css">
-</head>
-<body class="bg-gradient-to-r from-blue-700 to-blue-300">
 
-    <!-- Loading Screen -->
-    <div id="loadingScreen" class="w-full h-full fixed bg-gray-800 bg-opacity-0 z-50 flex items-center justify-center">
-        <span class="icon-[iconoir--soccer-ball] text-green-400 text-6xl animate-spin"></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-black-rich font-roboto bg-bg-stadium bg-blend-overlay bg-cover bg-no-repeat relative h-fit w-screen">
+
+    <div id="loadingScreen" class="w-full h-full fixed bg-black-rich z-50 flex items-center justify-center">
+        <span class="icon-[iconoir--soccer-ball] text-lime-green text-6xl animate-spin"></span>
     </div>
 
-    <!-- Header Section -->
-    <header class="w-full bg-gray-800 text-white font-bold px-4 py-2 text-xl flex items-center justify-between">
-        <h1><span class="text-pink-400">FUT</span> SQUAD BUILDER</h1>
+    <header class="w-full bg-black-slate text-white font-bold px-4 py-2 text-xl flex items-center justify-between">
+        <h1><span class="text-lime-green">FUT</span> SQUAD BUILDER</h1>
         <div class="flex gap-6 justify-between">
-            <span id="openAllHeader" class="icon-[mingcute--list-check-fill] cursor-pointer hover:text-pink-400 transition"></span>
-            <span id="openAddHeader" class="icon-[mingcute--user-add-fill] cursor-pointer hover:text-pink-400 transition"></span>
+            <span id="openAll" class="icon-[mingcute--list-check-fill] iconBtn"></span>
+            <span id="openAdd" class="icon-[mingcute--user-add-fill] iconBtn"></span>
         </div>
     </header>
 
-    <main class="p-6">
-        <div class="bg-blue-700 text-white text-lg text-center py-2 rounded-lg mb-6">
-            Welcome to the Squad Builder!
-        </div>
+    <main class="">
 
-        <div class="flex gap-5 items-start">
-            <!-- Formation Container (Larger Field) -->
-            <div id="formationContainer" class="relative grid grid-cols-4 grid-rows-10 bg-contain bg-no-repeat bg-[url('/FUT-Champ-Ultimate-Team-Assets/images/field.svg')] h-[600px] w-[800px]">
-            <!-- Squad Info Section -->
-            <div class="w-1/4 h-full bg-blue-900 text-white p-4 flex flex-col gap-2 rounded-lg">
+        <!-- MAIN FIELD -->
+        <div class="flex justify-evenly items-center flex-row gap-5 ">
+            <!-- FORMATION TABLE -->
+            <div
+                class="mt-14 w-2/3 h-full items-center flex flex-col justify-center bg-center bg-contain bg-no-repeat bg-stadium">
+                <!-- CONTAINER -->
+                <div id="formationContainer" class="grid grid-rows-3 grid-cols-4 gap-2 items-center justify-center w-full h-full">
+                    <!-- EMPTY CARD -->
+                    <div data-pos="ST" class="emptyCard player bg-card col-start-2 row-start-1 bottom-4 gap-2 ">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">ST</p>
+                    </div>
+                    <div data-pos="ST" class="emptyCard player bg-card col-start-3 row-start-1 bottom-4 gap-2 ">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">ST</p>
+                    </div>
+                    <div data-pos="LM" class="emptyCard player col-start-1 row-start-2 bottom-12">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">LM</p>
+                    </div>
+                    <div data-pos="CM" class="emptyCard player col-start-2 row-start-2 left-4 top-2">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">CM</p>
+                    </div>
+                    <div data-pos="CM" class="emptyCard player col-start-3 row-start-2 right-4 top-2">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">CM</p>
+                    </div>
+                    <div data-pos="RM" class="emptyCard player col-start-4 row-start-2 bottom-12">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">RM</p>
+                    </div>
+                    <div data-pos="LB" class="emptyCard player col-start-1 row-start-3 bottom-4">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">LB</p>
+                    </div>
+                    <div data-pos="CB" class="emptyCard player col-start-2 row-start-3 left-4 top-2">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">CB</p>
+                    </div>
+                    <div data-pos="CB" class="emptyCard player col-start-3 row-start-3 right-4 top-2">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">CB</p>
+                    </div>
+                    <div data-pos="RB" class="emptyCard player col-start-4 row-start-3 bottom-4">
+                        <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                        <p class="font-bold">RB</p>
+                    </div>
+                </div>
+                <div data-pos="GK" class="emptyCard player col-span-4 justify-self-center row-start-4 relative">
+                    <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+                    <p class="font-bold">RB</p>
+                </div>
+            </div>
+
+            <!-- MENU -->
+            <div class="rounded w-1/4 h-1/2 bg-black-rich text-white p-2 flex flex-col gap-2 items-center mr-12">
                 <h2 class="text-2xl">SQUAD INFO</h2>
                 <p>FORMATION</p>
-                <select class="bg-gray-700 w-full text-pink-400 rounded" name="formation" id="formationSelect">
+                <select class="bg-black-slate w-1/2 text-lime-green" name="formation" id="formationSelect">
                     <option value="4-4-2">4-4-2</option>
                     <option value="4-3-3">4-3-3</option>
                 </select>
                 <p>TOTAL CHEMISTRY</p>
-                <p class="text-pink-400">100%</p>
+                <p class="text-lime-green">100%</p>
             </div>
         </div>
 
-        <!-- Add Player Section -->
-        <div class="bg-gray-800 text-white p-4 mt-6 rounded-lg">
-            <h2 class="text-2xl font-bold text-center mb-4">ADD A PLAYER</h2>
-            <form class="flex flex-col gap-4" id="addPlayerForm">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="flex flex-col">
-                        <label for="playerName">Player Name</label>
-                        <select id="playerName" class="p-2 bg-gray-700 rounded" required>
-                            <!-- Player options will be dynamically loaded here -->
-                        </select>
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="playerPosition">Position</label>
-                        <select name="playerPosition" id="playerPosition" class="p-2 bg-gray-700 rounded" required>
-                            <option value="ST">ST</option>
-                            <option value="CM">CM</option>
-                            <option value="LM">LM</option>
-                            <option value="RM">RM</option>
-                            <option value="LB">LB</option>
-                            <option value="RB">RB</option>
-                        </select>
-                    </div>
+        <!-- SUBS -->
+        <div class="flex items-center justify-start gap-6 mt-36 p-2 px-10 flex-wrap">
+            <h2 class="text-white text-2xl font-semibold w-full text-center">SUBSTITUIONS</h2>
+            <!-- EMPTY CARD -->
+            <div class="m-0 player col-start-3 row-start-1 bottom-4">
+                <span class="icon-[gg--add] text-4xl text-lime-green "></span>
+            </div>
+        </div>
+
+        <!-- ADD FORM -->
+        <section class="hidden modalContainer">
+            <div id="addForm" class="w-2/3 lg:w-1/2 bg-black-slate rounded-lg p-4 text-white">
+                <div class="flex justify-between">
+                    <h2 class="text-center text-2xl font-bold mb-4">ADD A PLAYER</h2>
+                    <span id="closeAdd" class="icon-[meteor-icons--xmark] iconBtn"></span>
                 </div>
-                <button type="submit" class="mt-4 bg-pink-400 text-white py-2 rounded">Add Player</button>
-            </form>
-        </div>
+                <form class="flex flex-col gap-4">
+                    <!-- Info Column -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex flex-col">
+                            <label for="name" class="mb-1 text-sm font-semibold">Player Name</label>
+                            <input type="text" id="nameInput" placeholder="Enter player name" class="input ">
+                        </div>
 
-        Substitutions Section
-        <div class="flex items-center justify-start gap-6 mt-36 p-2 flex-wrap">
-            <h2 class="text-white text-2xl font-semibold w-full text-center">SUBSTITUTIONS</h2>
-            <div class="m-0 player col-start-3 row-start-1 bottom-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4">
-                <span class="icon-[gg--add] text-4xl text-pink-400"></span>
+                        <div class="flex flex-col">
+                            <label for="nationality" class="mb-1 text-sm font-semibold">Nationality</label>
+                            <input type="text" id="natioInput" placeholder="Enter nationality" class="input">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="club" class="mb-1 text-sm font-semibold">Club Name</label>
+                            <input type="text" id="clubInput" placeholder="Enter club name" class="input ">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="position" class="mb-1 text-sm font-semibold">Position</label>
+                            <select class="input h-10" name="position" id="positionInput">
+                                <option value="ST">ST</option>
+                                <option value="LM">LM</option>
+                                <option value="CM">CM</option>
+                                <option value="RM">RM</option>
+                                <option value="LB">LB</option>
+                                <option value="CB">CB</option>
+                                <option value="RB">RB</option>
+                                <option value="GK">GK</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Images Section -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="flex flex-col">
+                            <label for="player-photo" class="mb-1 text-sm font-semibold">Player Photo</label>
+                            <input type="file" id="photoInput" class="input">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="club-photo" class="mb-1 text-sm font-semibold">Club Logo</label>
+                            <input type="file" id="clubImageInput" class="input">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="flag-photo" class="mb-1 text-sm font-semibold">National Flag</label>
+                            <input type="file" id="flagImageInput" class="input w-full">
+                        </div>
+                    </div>
+
+                    <!-- Stats Section -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="flex flex-col">
+                            <label for="pace" class="mb-1 text-sm font-semibold">Pace</label>
+                            <input type="number" id="paceInput" placeholder="Pace (0-100)" class="input" min="0"
+                                max="100">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="shooting" class="mb-1 text-sm font-semibold">Shooting</label>
+                            <input type="number" id="shootingInput" placeholder="Shooting (0-100)" class="input" min="0"
+                                max="100">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="passing" class="mb-1 text-sm font-semibold">Passing</label>
+                            <input type="number" id="passingInput" placeholder="Passing (0-100)" class="input" min="0"
+                                max="100">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="Dribbling" class="mb-1 text-sm font-semibold">Dribbling</label>
+                            <input type="number" id="dribblingInput" placeholder="Dribbling (0-100)" class="input"
+                                min="0" max="100">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="Defending" class="mb-1 text-sm font-semibold">Defending</label>
+                            <input type="number" id="defendingInput" placeholder="Defending (0-100)" class="input"
+                                min="0" max="100">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="Physical" class="mb-1 text-sm font-semibold">Physical</label>
+                            <input type="number" id="physicalInput" placeholder="Physical (0-100)" class="input" min="0"
+                                max="100">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="rating" class="mb-1 text-sm font-semibold">Rating</label>
+                            <input type="number" id="ratingInput" placeholder="Rating (0-100)" class="input" min="0"
+                                max="100">
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex justify-center mt-4">
+                        <button id="addBtn" class="submitBtn">
+                            Submit Player
+                        </button>
+                    </div>
+                </form>
             </div>
-        </div>
+        </section>
+
+        <!-- DISPLAY FORM -->
+        <section id="plrDisplay" class="hidden modalContainer gap-12 flex-col md:flex-row z-50">
+            <!-- PLAYER CARD -->
+            <div class="player animate-pulse bg-gold-card scale-150 hover:scale-150 m-0 text-black">
+                <div class="w-fit font-semibold absolute top-6 left-2">
+                    <p class="displayRating">90</p>
+                    <p class="displayPos">ST</p>
+                </div>
+                <img class="h-1/2 mt-7 displayPhoto" src="assets/playerimage.png" alt="">
+                <p class="displayName">NAME</p>
+                <div class="flex text-xs gap-1">
+                    <p class="displayPAC">PAC 80</p>
+                    <p class="displaySHO">SHO 80</p>
+                    <p class="displayDRI">DRI 80</p>
+                    <p class="displayPAS">PAC 80</p>
+                    <p class="displayDEF">PAC 80</p>
+                    <p class="displayPHY">PAC 80</p>
+                </div>
+                <div class="flex items-center gap-1">
+                    <img class="h-4 displayFlag" src="assets/playerflag.png" alt="">
+                    <img class="h-5 object-fill displayClub" src="assets/playerclub.png" alt="">
+                </div>
+
+            </div>
+            <div class=" w-full md:w-1/3 bg-black-rich text-white text-2xl p-2 flex flex-col gap-2 relative">
+                <span id="closeDisplay" class="icon-[meteor-icons--xmark] iconBtn self-end absolute"></span>
+                <div class="w-fit flex gap-2 items-center hover:text-red-300 cursor-pointer">
+                    <span class="icon-[fluent--person-delete-24-filled]"></span>
+                    <p>REMOVE PLAYER</p>
+                </div>
+                <div class="w-fit flex gap-2 items-center hover:text-green-300 cursor-pointer">
+                    <span class="icon-[mdi--account-switch]"></span>
+                    <p>CHANGE PLAYER</p>
+                </div>
+                <div class="w-fit flex gap-2 items-center hover:text-blue-300 cursor-pointer">
+                    <span class="icon-[mingcute--user-edit-fill]"></span>
+                    <p>EDIT PLAYER</p>
+                </div>
+                <div class="w-fit flex gap-2 items-center hover:text-red-600 cursor-pointer">
+                    <span class="icon-[meteor-icons--trash-can]"></span>
+                    <p>DELETE PLAYER</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ALL PLAYERS FORM -->
+        <section class="hidden modalContainer">
+            <!-- PLAYERS CONTAINER -->
+            <div class="w-2/3 h-2/3 bg-black-slate text-white rounded">
+                <div class="flex justify-between p-4 bg-black-rich">
+                    <input class="bg-black-slate rounded px-1" placeholder="Search for a player" type="text"
+                        name="search" id="playerSearch">
+                    <div class="flex gap-2 items-center">
+                        <h2 class="text-xl">PLAYER LIST</h2>
+                        <span id="closeAll" class="icon-[meteor-icons--xmark] iconBtn"></span>
+                    </div>
+
+                </div>
+                <!-- MAIN CONTAINER -->
+                <div id="allPlayersContainer"
+                    class="w-full h-[88%] flex flex-wrap gap-12 p-6 justify-start overflow-x-hidden overflow-y-auto">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- INSERT PLAYERS FORM -->
+        <section class="hidden modalContainer">
+             <!-- PLAYERS CONTAINER -->
+             <div class="w-2/3 h-2/3 bg-black-slate text-white rounded">
+                <div class="flex justify-between p-4 bg-black-rich">
+                        <h2 class="text-xl">INSERT PLAYER</h2>
+                        <span id="closeInsert" class="icon-[meteor-icons--xmark] iconBtn"></span>
+                </div>
+                <!-- MAIN CONTAINER -->
+                <div id="insertContainer"
+                    class="w-full h-[88%] flex flex-wrap gap-12 p-6 justify-start overflow-x-hidden overflow-y-auto">
+
+                </div>
+                <!--  -->
+                <div class="bg-black-rich w-full p-2">
+                    <button id="insertBtn" class="submitBtn bg-dark-green">APPLY</button>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <section class="mt-8">
-        <h2 class="text-xl font-bold mb-4">Popular Tactics</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img alt="A detailed image of a 4-4-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/442.jpg" width="300"/>
-                <h3 class="text-lg font-bold mt-2">4-4-2 Classic</h3>
-                <p class="text-gray-600">A balanced formation with a strong midfield presence.</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img alt="A detailed image of a 4-3-3 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/443.jpg" width="300"/>
-                <h3 class="text-lg font-bold mt-2">4-3-3 Attack</h3>
-                <p class="text-gray-600">An attacking formation with three forwards.</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img alt="A detailed image of a 3-5-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/352.jpg" width="300"/>
-                <h3 class="text-lg font-bold mt-2">3-5-2 Control</h3>
-                <p class="text-gray-600">A formation that focuses on midfield control.</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img alt="A detailed image of a 4-2-3-1 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/4231.jpg" width="300"/>
-                <h3 class="text-lg font-bold mt-2">4-2-3-1 Defensive</h3>
-                <p class="text-gray-600">A defensive formation with two holding midfielders.</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img alt="A detailed image of a 4-1-2-1-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/41212.jpg" width="300"/>
-                <h3 class="text-lg font-bold mt-2">4-1-2-1-2 Narrow</h3>
-                <p class="text-gray-600">A narrow formation with a diamond midfield.</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img alt="A detailed image of a 5-3-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/532.jpg" width="300"/>
-                <h3 class="text-lg font-bold mt-2">5-3-2 Counter</h3>
-                <p class="text-gray-600">A defensive formation with a focus on counter-attacks.</p>
-            </div>
+</main>
+<section class="mt-8">
+    <h2 class="text-xl font-bold mb-4">Popular Tactics</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img alt="A detailed image of a 4-4-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/442.jpg" width="300"/>
+            <h3 class="text-lg font-bold mt-2">4-4-2 Classic</h3>
+            <p class="text-gray-600">A balanced formation with a strong midfield presence.</p>
         </div>
-    </section>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img alt="A detailed image of a 4-3-3 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/443.jpg" width="300"/>
+            <h3 class="text-lg font-bold mt-2">4-3-3 Attack</h3>
+            <p class="text-gray-600">An attacking formation with three forwards.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img alt="A detailed image of a 3-5-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/352.jpg" width="300"/>
+            <h3 class="text-lg font-bold mt-2">3-5-2 Control</h3>
+            <p class="text-gray-600">A formation that focuses on midfield control.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img alt="A detailed image of a 4-2-3-1 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/4231.jpg" width="300"/>
+            <h3 class="text-lg font-bold mt-2">4-2-3-1 Defensive</h3>
+            <p class="text-gray-600">A defensive formation with two holding midfielders.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img alt="A detailed image of a 4-1-2-1-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/41212.jpg" width="300"/>
+            <h3 class="text-lg font-bold mt-2">4-1-2-1-2 Narrow</h3>
+            <p class="text-gray-600">A narrow formation with a diamond midfield.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img alt="A detailed image of a 5-3-2 football formation" class="w-full h-48 object-cover rounded-md" height="200" src="FUT-Champ-Ultimate-Team-Assets/images/532.jpg" width="300"/>
+            <h3 class="text-lg font-bold mt-2">5-3-2 Counter</h3>
+            <p class="text-gray-600">A defensive formation with a focus on counter-attacks.</p>
+        </div>
+    </div>
+</section>
 
-    <footer class="bg-gradient-to-r from-purple-500 to-pink-500 py-10">
-        <div class="container mx-auto px-4">
-            <!-- Footer Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <!-- Latest Squads Section -->
-                <div>
-                    <h2 class="text-white text-xl font-semibold mb-4">LATEST SQUADS</h2>
-                    <ul class="space-y-2 text-gray-200">
-                        <li class="hover:text-white cursor-pointer transition">FC Pro</li>
-                        <li class="hover:text-white cursor-pointer transition">Team Of The Week 10</li>
-                        <li class="hover:text-white cursor-pointer transition">Track Stars</li>
-                        <li class="hover:text-white cursor-pointer transition">Team Of The Week 9</li>
-                        <li class="hover:text-white cursor-pointer transition">Ballon d'Or</li>
-                    </ul>
-                </div>
-    
-                <!-- Useful Links Section -->
-                <div>
-                    <h2 class="text-white text-xl font-semibold mb-4">USEFUL LINKS</h2>
-                    <ul class="space-y-2 text-gray-200">
-                        <li class="hover:text-white cursor-pointer transition">Squad Builder</li>
-                        <li class="hover:text-white cursor-pointer transition">SBC</li>
-                        <li class="hover:text-white cursor-pointer transition">EA FC 25 Players</li>
-                    </ul>
-                </div>
-    
-                <!-- FUTBIN Applications Section -->
-                <div>
-                    <h2 class="text-white text-xl font-semibold mb-4">FUTBIN APPLICATIONS</h2>
-                    <ul class="space-y-2 text-gray-200">
-                        <li class="hover:text-white cursor-pointer transition"><i class="fas fa-android text-pink-400"></i> FUTBIN For Android</li>
-                        <li class="hover:text-white cursor-pointer transition"><i class="fas fa-apple text-pink-400"></i> FUTBIN For IOS</li>
-                        <li class="hover:text-white cursor-pointer transition">More Details</li>
-                    </ul>
-                </div>
+<footer class="bg-gradient-to-r from-purple-500 to-pink-500 py-10">
+    <div class="container mx-auto px-4">
+        <!-- Footer Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Latest Squads Section -->
+            <div>
+                <h2 class="text-white text-xl font-semibold mb-4">LATEST SQUADS</h2>
+                <ul class="space-y-2 text-gray-200">
+                    <li class="hover:text-white cursor-pointer transition">FC Pro</li>
+                    <li class="hover:text-white cursor-pointer transition">Team Of The Week 10</li>
+                    <li class="hover:text-white cursor-pointer transition">Track Stars</li>
+                    <li class="hover:text-white cursor-pointer transition">Team Of The Week 9</li>
+                    <li class="hover:text-white cursor-pointer transition">Ballon d'Or</li>
+                </ul>
             </div>
-    
-            <!-- Footer Bottom Section -->
-            <div class="mt-8 text-center text-gray-200 text-sm">
-                <p>© 2014-2024 Copyright FUTBIN.com. All FIFA assets are property of EA Sports.</p>
-                <p class="mt-4">
-                    <a href="#" class="hover:text-pink-400 transition">TOS</a> | 
-                    <a href="#" class="hover:text-pink-400 transition">Privacy Policy</a> | 
-                    <a href="#" class="hover:text-pink-400 transition">Cookie Policy</a> | 
-                    <a href="#" class="hover:text-pink-400 transition">Contact</a>
-                </p>
+
+            <!-- Useful Links Section -->
+            <div>
+                <h2 class="text-white text-xl font-semibold mb-4">USEFUL LINKS</h2>
+                <ul class="space-y-2 text-gray-200">
+                    <li class="hover:text-white cursor-pointer transition">Squad Builder</li>
+                    <li class="hover:text-white cursor-pointer transition">SBC</li>
+                    <li class="hover:text-white cursor-pointer transition">EA FC 25 Players</li>
+                </ul>
+            </div>
+
+            <!-- FUTBIN Applications Section -->
+            <div>
+                <h2 class="text-white text-xl font-semibold mb-4">FUTBIN APPLICATIONS</h2>
+                <ul class="space-y-2 text-gray-200">
+                    <li class="hover:text-white cursor-pointer transition"><i class="fas fa-android text-pink-400"></i> FUTBIN For Android</li>
+                    <li class="hover:text-white cursor-pointer transition"><i class="fas fa-apple text-pink-400"></i> FUTBIN For IOS</li>
+                    <li class="hover:text-white cursor-pointer transition">More Details</li>
+                </ul>
             </div>
         </div>
-    
-        <!-- Social Media Icons -->
-        <div class="bg-purple-400 py-4">
-            <div class="container mx-auto flex justify-center space-x-6">
-                <a href="#" class="text-black hover:text-pink-400 transition">
-                    <i class="fab fa-youtube text-2xl"></i>
-                </a>
-                <a href="#" class="text-black hover:text-pink-400 transition">
-                    <i class="fab fa-facebook text-2xl"></i>
-                </a>
-                <a href="#" class="text-black hover:text-pink-400 transition">
-                    <i class="fab fa-twitter text-2xl"></i>
-                </a>
-                <a href="#" class="text-black hover:text-pink-400 transition">
-                    <i class="fab fa-instagram text-2xl"></i>
-                </a>
-                <a href="#" class="text-black hover:text-pink-400 transition">
-                    <i class="fab fa-tiktok text-2xl"></i>
-                </a>
-            </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="mt-8 text-center text-gray-200 text-sm">
+            <p>Â© 2014-2024 Copyright FUTBIN.com. All FIFA assets are property of EA Sports.</p>
+            <p class="mt-4">
+                <a href="#" class="hover:text-pink-400 transition">TOS</a> | 
+                <a href="#" class="hover:text-pink-400 transition">Privacy Policy</a> | 
+                <a href="#" class="hover:text-pink-400 transition">Cookie Policy</a> | 
+                <a href="#" class="hover:text-pink-400 transition">Contact</a>
+            </p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="bg-purple-400 py-4">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="#" class="text-black hover:text-pink-400 transition">
+                <i class="fab fa-youtube text-2xl"></i>
+            </a>
+            <a href="#" class="text-black hover:text-pink-400 transition">
+                <i class="fab fa-facebook text-2xl"></i>
+            </a>
+            <a href="#" class="text-black hover:text-pink-400 transition">
+                <i class="fab fa-twitter text-2xl"></i>
+            </a>
+            <a href="#" class="text-black hover:text-pink-400 transition">
+                <i class="fab fa-instagram text-2xl"></i>
+            </a>
+            <a href="#" class="text-black hover:text-pink-400 transition">
+                <i class="fab fa-tiktok text-2xl"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
+
 </html>
