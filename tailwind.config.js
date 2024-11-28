@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: [
+    './public/index.html',
+    './public/script.js',
+    './css/input.css',
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -9,4 +13,4 @@ module.exports = {
     },
   },
 }
-  plugins: []
+plugins: []
