@@ -16,22 +16,15 @@
 
 2. **Positionnement des Joueurs :**
 
-   - Ajustement des positions en fonction des formations tactiques (4-4-2, 4-3-3).
+   - Ajustement des positions en fonction des formations tactiques (4-4-2).
 
-3. **Calcul de la Chimie :**
-
-   - Calcul dynamique basé sur les liens entre les joueurs (club, ligue, nationalité).
-   - Affichage d'un score de chimie normalisé.
-
-4. **Sauvegarde des Données :**
+3. **Sauvegarde des Données :**
 
    - Utilisation de `localStorage` pour conserver les données des formations et des joueurs.
 
-5. **Interface Interactive :**
 
-   - Fonctionnalité de **drag-and-drop** pour le positionnement et l'échange des joueurs.
 
-6. **Responsive Design :**
+4. **Responsive Design :**
    - Interface adaptée aux écrans de toutes tailles (desktop, tablette, mobile).
 
 ---
