@@ -1,14 +1,3 @@
-
-// fetch('./players.json')
-//   .then((response) => response.json())
-//   .then((json) => {
-//     localStorage.setItem("players", JSON.stringify(json));
-//   })
-//   .catch((error) => {
-//     console.error("Erreur lors du chargement du fichier JSON", error);
-//   });
-//   let players = JSON.parse(localStorage.getItem("players"));
-  
 const element = document.querySelector('.banc');
 
 let scrollAnimation = element.animate(
