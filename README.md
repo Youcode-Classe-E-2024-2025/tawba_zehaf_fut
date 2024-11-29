@@ -41,3 +41,4 @@
   - `localStorage` pour la sauvegarde locale.
 
 ---
+lien vers canva pour la presentation du projet :https://www.canva.com/design/DAGX21Xko0g/Pu8eP3V6sRb4-MlKoQwtew/edit?utm_content=DAGX21Xko0g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
