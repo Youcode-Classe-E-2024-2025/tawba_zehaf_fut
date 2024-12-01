@@ -2,8 +2,12 @@ const element = document.querySelector('.banc');
 
 let scrollAnimation = element.animate(
   [
-    { transform: 'translateX(100%)' }, 
-    { transform: 'translateX(0%)' }
+    {
+       transform: 'translateX(100%)' 
+    }, 
+    { 
+      transform: 'translateX(0%)'
+    }
   ],
   {
     duration: 2000,
@@ -32,6 +36,16 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+
+          <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
+
+
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -83,6 +97,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -134,6 +155,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -188,6 +216,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -238,6 +273,13 @@ let  formation_4_3_3=`
             </svg>
             
           </button>
+            <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -289,6 +331,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -343,6 +392,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -394,6 +450,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -445,6 +508,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -496,6 +566,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -550,6 +627,13 @@ let  formation_4_3_3=`
            </svg>
            
          </button>
+           <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
           <!-- Player Icon -->
           <div class="flex justify-center mt-6">
             <img class="goalkepper-image w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -606,6 +690,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -657,6 +748,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -713,6 +811,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -763,6 +868,13 @@ let formation_4_4_2=`
          </svg>
          
        </button>
+         <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -814,6 +926,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -865,6 +984,13 @@ let formation_4_4_2=`
       </svg>
       
     </button>
+      <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
      <!-- Player Icon -->
      <div class="flex justify-center mt-6">
        <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -912,6 +1038,7 @@ let formation_4_4_2=`
        </button>
         <!-- update Button -->
        </button>
+
        <button class="replace-btn absolute top-2 left-1 bg-blue-500 text-white rounded-full p-1 hover:bg-slate-500 transition">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h5M20 20v-5h-5" />
@@ -919,6 +1046,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -970,6 +1104,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -1021,6 +1162,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -1072,6 +1220,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -1126,6 +1281,13 @@ let formation_4_4_2=`
         </svg>
         
       </button>
+        <!-- New Modify Button -->
+            <button class="modify-btn absolute top-0 left-14 bg-transparent text-black text-center   bg-blue-300  rounded-full p-1 hover:bg-yellow-600 transition max-sm:left-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.121-2.121L9 15.414V17h1.586l7.536-7.536m-2.121-2.121L17 6.293a1 1 0 0 1 1.414 0l1.293 1.293a1 1 0 0 1 0 1.414l-1.293 1.293" />
+                     </svg>
+
+            </button>
        <!-- Player Icon -->
        <div class="flex justify-center mt-6">
          <img class="goalkepper-image w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="../images/inconnue.png">
@@ -1194,95 +1356,113 @@ position.addEventListener("change", () => {
   }
 });
 
+
+name_input.addEventListener("input", () => {
+  if (valider(name_input.value)) {
+    AddBtn.disabled = false;
+  } else {
+    AddBtn.disabled = true;
+  }
+});
+
+
 const bancSection = document.querySelector('.banc');
 
 AddBtn.addEventListener("click", (e) => {
   e.preventDefault();
+ 
   let goalkeepers = JSON.parse(localStorage.getItem("goalkeepers")) || [];
+if(!(valider(name_input))){
+ alert("test")
+  
+}else{
+console.log(name_input);
 
   if (position.value.endsWith("GB") ) {
     
     //console.log(Goalkepper_name);
-    
-          if(goalkeepers.length > 0){
 
-            const newPlayerCard = document.createElement('div');
-            newPlayerCard.className = 'player flex flex-col justify-center';
-            newPlayerCard.innerHTML = `
-              <div class="banc-player  relative w-[130px] h-[180px] max-sm:w-[100px] rounded-[12px] overflow-hidden shadow-lg text-white bg-cover bg-center" style="background-image: url('../assets/examples/badge_ballon_dor.webp');">
-                <button class="delete-btn btn-test absolute top-2 right-1 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-                <div class="flex justify-center mt-6">
-                  <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="${player_image_input.value}">
+
+      if(goalkeepers.length > 0 ){
+
+        const newPlayerCard = document.createElement('div');
+        newPlayerCard.className = 'player flex flex-col justify-center';
+        newPlayerCard.innerHTML = `
+          <div class="banc-player  relative w-[130px] h-[180px] max-sm:w-[100px] rounded-[12px] overflow-hidden shadow-lg text-white bg-cover bg-center" style="background-image: url('../assets/examples/badge_ballon_dor.webp');">
+            <button class="delete-btn btn-test absolute top-2 right-1 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div class="flex justify-center mt-6">
+              <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="${player_image_input.value}">
+            </div>
+            <div class="absolute bottom-[50px] w-full text-center font-bold text-base text-white pb-1" id="PlayerName">
+              ${name_input.value.trim()} 
+            </div>
+            <div class="absolute bottom-6 w-full px-3">
+              <div class="grid grid-cols-2 text-center text-xs font-bold">
+                <div>
+                  <span class="text-yellow-400">${diving_stas_input.value || "0"}</span>
+                  <span style="font-size: 8px;">DIV</span>
                 </div>
-                <div class="absolute bottom-[50px] w-full text-center font-bold text-base text-white pb-1" id="PlayerName">
-                  ${name_input.value.trim()} 
+                <div>
+                  <span class="text-yellow-400" style="font-size: 10px;">${kicking_stas_input.value || "0"}</span>
+                  <span style="font-size: 8px;">KICK</span>
                 </div>
-                <div class="absolute bottom-6 w-full px-3">
-                  <div class="grid grid-cols-2 text-center text-xs font-bold">
-                    <div>
-                      <span class="text-yellow-400">${diving_stas_input.value || "0"}</span>
-                      <span style="font-size: 8px;">DIV</span>
-                    </div>
-                    <div>
-                      <span class="text-yellow-400" style="font-size: 10px;">${kicking_stas_input.value || "0"}</span>
-                      <span style="font-size: 8px;">KICK</span>
-                    </div>
-                    <div>
-                      <span class="text-yellow-400" style="font-size: 10px;">${reflexes_stas_input.value || "0"}</span>
-                      <span style="font-size: 8px;">RELF</span>
-                    </div>
-                    <div>
-                      <span class="text-yellow-400" style="font-size: 10px;">${Passing_stas_input.value || "0"}</span>
-                      <span style="font-size: 8px;">PASS</span>
-                    </div>
-                  </div>
+                <div>
+                  <span class="text-yellow-400" style="font-size: 10px;">${reflexes_stas_input.value || "0"}</span>
+                  <span style="font-size: 8px;">RELF</span>
+                </div>
+                <div>
+                  <span class="text-yellow-400" style="font-size: 10px;">${Passing_stas_input.value || "0"}</span>
+                  <span style="font-size: 8px;">PASS</span>
                 </div>
               </div>
-            `;
-            bancSection.appendChild(newPlayerCard);
-      
-            // add banc player to localestorage
-            const benchPlayer = {
-              role: "bench-goalkepper",
-              image: player_image_input.value,
-              name: name_input.value.trim(),
-              physique: Passing_stas_input.value || "0",
-              shooting: kicking_stas_input.value || "0",
-              dribbling: reflexes_stas_input.value || "0",
-              passing: Passing_stas_input.value || "0"
-            };
-      
-            let benchPlayers = JSON.parse(localStorage.getItem("benchPlayers")) || [];
-            benchPlayers.push(benchPlayer);
-            localStorage.setItem("benchPlayers", JSON.stringify(benchPlayers));
-      
-            
-          }else if(Goalkepper_name.textContent && Goalkepper_name.textContent.trim() === "" && goalkeepers.length == 0){
-            Goalkepper_name.textContent = name_input.value.trim();
-            DIV_goal_stats.textContent = diving_stas_input.value || "0";
-            KICK_goal_stats.textContent = kicking_stas_input.value || "0";
-            RELF_goal_stats.textContent = reflexes_stas_input.value || "0";
-            PASS_goal_stats.textContent = Passing_stas_input.value || "0";
-            goalkepper_image.src = player_image_input.value;
+            </div>
+          </div>
+        `;
+        bancSection.appendChild(newPlayerCard);
+  
+        // add banc player to localestorage
+        const benchPlayer = {
+          role: "bench-goalkepper",
+          image: player_image_input.value,
+          name: name_input.value.trim(),
+          physique: Passing_stas_input.value || "0",
+          shooting: kicking_stas_input.value || "0",
+          dribbling: reflexes_stas_input.value || "0",
+          passing: Passing_stas_input.value || "0"
+        };
+  
+        let benchPlayers = JSON.parse(localStorage.getItem("benchPlayers")) || [];
+        benchPlayers.push(benchPlayer);
+        localStorage.setItem("benchPlayers", JSON.stringify(benchPlayers));
+  
         
-            let goalkeeper = {
-              role: "goalkeeper",
-              image: player_image_input.value,
-              name: name_input.value.trim(),
-              diving: diving_stas_input.value || "0",
-              kicking: kicking_stas_input.value || "0",
-              reflexes: reflexes_stas_input.value || "0",
-              passing: Passing_stas_input.value || "0",
-            };
-        
-          
-            goalkeepers.push(goalkeeper);
-            localStorage.setItem("goalkeepers", JSON.stringify(goalkeepers));
-          }
+      }else if(Goalkepper_name.textContent && Goalkepper_name.textContent.trim() === "" && goalkeepers.length == 0){
+        Goalkepper_name.textContent = name_input.value.trim();
+        DIV_goal_stats.textContent = diving_stas_input.value || "0";
+        KICK_goal_stats.textContent = kicking_stas_input.value || "0";
+        RELF_goal_stats.textContent = reflexes_stas_input.value || "0";
+        PASS_goal_stats.textContent = Passing_stas_input.value || "0";
+        goalkepper_image.src = player_image_input.value;
+    
+        let goalkeeper = {
+          role: "goalkeeper",
+          image: player_image_input.value,
+          name: name_input.value.trim(),
+          diving: diving_stas_input.value || "0",
+          kicking: kicking_stas_input.value || "0",
+          reflexes: reflexes_stas_input.value || "0",
+          passing: Passing_stas_input.value || "0",
+        };
+    
+      
+        goalkeepers.push(goalkeeper);
+        localStorage.setItem("goalkeepers", JSON.stringify(goalkeepers));
+      }
+
 
 
   } else if (!position.value.endsWith("nothing")) {
@@ -1380,7 +1560,8 @@ AddBtn.addEventListener("click", (e) => {
   document.querySelector("#playerForm").reset();
   statistique_All.style.display = "none";
   Goalkepper_stats.style.display = "none";
-  window.location.reload();
+  //window.location.reload();
+}
 });
 
 
@@ -1457,6 +1638,7 @@ window.addEventListener("load", () => {
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
+
           <div class="flex justify-center mt-6">
             <img class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-lg" src="${player.image}">
           </div>
@@ -1578,53 +1760,69 @@ window.addEventListener("load", () => {
 const deleteButtons = document.querySelectorAll('.delete-btn, .banc .delete-btn');
 
 let repmlacer_btn = document.querySelectorAll(".replace-btn");
-
+let alert_suppression=document.querySelector("#alert-suppression");
+let modal_modif=document.querySelector("#editModal")
 document.addEventListener('click', function(e) {
   //console.log(e.target);
   if (e.target.closest('.delete-btn')) {
+    if (confirm("Êtes-vous sûr de vouloir supprimer ce joueur ?") == true) {
+      alert_suppression.style.display='block'
+      const btn = e.target.closest('.delete-btn');
+      const card = btn.closest('.player');
+      const playerPosition = card.classList[0];
+      const playerImage = card.querySelector("img");
+      const playerName = card.querySelector("#PlayerName") || card.querySelector("#Goalkepper_name");
+      
+      if (card.closest('.banc')) {
+        const playerNameText = playerName.textContent.trim();
+        let benchPlayers = JSON.parse(localStorage.getItem("benchPlayers")) || [];
+        const updatedBenchPlayers = benchPlayers.filter(player => player.name !== playerNameText);
+        localStorage.setItem("benchPlayers", JSON.stringify(updatedBenchPlayers));
+  
+        let benchPlayers_replaed = JSON.parse(localStorage.getItem("bench-replaced")) || [];
+        const updatedBenchPlayers_replaced = benchPlayers_replaed.filter(player => player.name !== playerNameText);
+        localStorage.setItem("bench-replaced", JSON.stringify(updatedBenchPlayers_replaced));
+        
+        card.remove();
+      } else if (playerPosition === 'GB') {
+        const goalieNameText = playerName.textContent.trim();
+        
+        playerName.textContent = "";
+        playerImage.src = "../images/inconnue.png";
+        card.querySelector(".DIV_goal").textContent = "?";
+        card.querySelector(".RELF_goal").textContent = "?";
+        card.querySelector(".PASS_goal").textContent = "?";
+        card.querySelector(".KICK_goal").textContent = "?";
+  
+        let goalkeepers = JSON.parse(localStorage.getItem("goalkeepers")) || [];
+        const updatedGoalkeepers = goalkeepers.filter(player => player.name !== goalieNameText);
+        localStorage.setItem("goalkeepers", JSON.stringify(updatedGoalkeepers));
+      } else {
+        const playerNameText = playerName.textContent.trim();
+        
+        playerName.textContent = "";
+        playerImage.src = "../images/inconnue.png";
+        const stats = card.querySelectorAll(".PHY_PLYER_STAS, .SHO_PLYER_STAS, .PAS_PLYER_STAS, .DRI_PLYER_STAS");
+        stats.forEach(stat => stat.textContent = "?");
+  
+        let players = JSON.parse(localStorage.getItem("players")) || [];
+        const updatedPlayers = players.filter(player => player.name !== playerNameText);
+        localStorage.setItem("players", JSON.stringify(updatedPlayers));
+        
     
-    const btn = e.target.closest('.delete-btn');
-    const card = btn.closest('.player');
-    const playerPosition = card.classList[0];
-    const playerImage = card.querySelector("img");
-    const playerName = card.querySelector("#PlayerName") || card.querySelector("#Goalkepper_name");
-    
-    if (card.closest('.banc')) {
-      const playerNameText = playerName.textContent.trim();
-      let benchPlayers = JSON.parse(localStorage.getItem("benchPlayers")) || [];
-      const updatedBenchPlayers = benchPlayers.filter(player => player.name !== playerNameText);
-      localStorage.setItem("benchPlayers", JSON.stringify(updatedBenchPlayers));
+      }
+      window.scrollTo({
+        top: 0, 
+        left: 0, 
+        behavior: "smooth"
+      });
 
-      let benchPlayers_replaed = JSON.parse(localStorage.getItem("bench-replaced")) || [];
-      const updatedBenchPlayers_replaced = benchPlayers_replaed.filter(player => player.name !== playerNameText);
-      localStorage.setItem("bench-replaced", JSON.stringify(updatedBenchPlayers_replaced));
-      
-      card.remove();
-    } else if (playerPosition === 'GB') {
-      const goalieNameText = playerName.textContent.trim();
-      
-      playerName.textContent = "";
-      playerImage.src = "../images/inconnue.png";
-      card.querySelector(".DIV_goal").textContent = "?";
-      card.querySelector(".RELF_goal").textContent = "?";
-      card.querySelector(".PASS_goal").textContent = "?";
-      card.querySelector(".KICK_goal").textContent = "?";
 
-      let goalkeepers = JSON.parse(localStorage.getItem("goalkeepers")) || [];
-      const updatedGoalkeepers = goalkeepers.filter(player => player.name !== goalieNameText);
-      localStorage.setItem("goalkeepers", JSON.stringify(updatedGoalkeepers));
-    } else {
-      const playerNameText = playerName.textContent.trim();
-      
-      playerName.textContent = "";
-      playerImage.src = "../images/inconnue.png";
-      const stats = card.querySelectorAll(".PHY_PLYER_STAS, .SHO_PLYER_STAS, .PAS_PLYER_STAS, .DRI_PLYER_STAS");
-      stats.forEach(stat => stat.textContent = "?");
-
-      let players = JSON.parse(localStorage.getItem("players")) || [];
-      const updatedPlayers = players.filter(player => player.name !== playerNameText);
-      localStorage.setItem("players", JSON.stringify(updatedPlayers));
+      setTimeout(() => {
+        alert_suppression.style.display='none'
+      }, 2000);
     }
+  
     // BTN REMPLACEMENT 
   }else if((e.target.closest('.replace-btn'))){
     btn=e.target.closest('.replace-btn');
@@ -1633,7 +1831,7 @@ document.addEventListener('click', function(e) {
     
     // normal players
     benchPlayersList.innerHTML += '';
-    modal.classList.remove('hidden');
+    modal.style.display='flex'
 
 
     bancplayers.forEach(player => {
@@ -1664,7 +1862,7 @@ document.addEventListener('click', function(e) {
       
         
         if (!originalPlayer) return;
-;
+
         const oldName = originalPlayer.querySelector("#PlayerName").textContent.trim();
         const originalImage = originalPlayer.querySelector("img").src;
         const originalPhysique = originalPlayer.querySelector(".PHY_PLYER_STAS").textContent;
@@ -1837,7 +2035,82 @@ document.addEventListener('click', function(e) {
       benchPlayersList.appendChild(playercard_rempl_replaced);
     });
     
-  }
+  }else if ((e.target.closest('.modify-btn'))){
+
+    modal_modif.style.display='flex'
+    btn=e.target.closest('.modify-btn');
+   // console.log(btn.parentElement);
+    let NameBeforeModif=btn.parentElement.querySelector("#PlayerName") || btn.parentElement.querySelector("#Goalkepper_name");
+    let ImageBeforeModif=btn.parentElement.querySelector("img").src;
+    let physiqueBeforeModif=btn.parentElement.querySelector(".PHY_PLYER_STAS") || btn.parentElement.querySelector(".DIV_goal");
+    let ShotingBeforeModif=btn.parentElement.querySelector(".SHO_PLYER_STAS")|| btn.parentElement.querySelector(".KICK_goal");
+    let PassingBeforeModif=btn.parentElement.querySelector(".PAS_PLYER_STAS")|| btn.parentElement.querySelector(".RELF_goal");
+    let DribllingBeforeModif=btn.parentElement.querySelector(".DRI_PLYER_STAS")|| btn.parentElement.querySelector(".PASS_goal");
+    
+    document.querySelector("#editName").value=NameBeforeModif.textContent
+    document.querySelector("#editImage").value=ImageBeforeModif;
+    document.querySelector("#Physique-modifier").value=physiqueBeforeModif.textContent;
+    document.querySelector("#Shoting-modifier").value=ShotingBeforeModif.textContent;
+    document.querySelector("#Passing-modifier").value=PassingBeforeModif.textContent;
+    document.querySelector("#Dribbling-modifier").value=DribllingBeforeModif.textContent;
+
+
+
+    let players = JSON.parse(localStorage.getItem("players")) || [];
+    if(players.find(p => p.name === NameBeforeModif.textContent)!=undefined){
+
+      let PlayerUpdated = players.find(p => p.name === NameBeforeModif.textContent);
+      //let roleupdated=PlayerUpdated.role
+      //console.log("Afterxx",PlayerUpdated);
+   document.querySelector("#Modifier-btn-form").addEventListener("click",()=>{
+  
+    if (PlayerUpdated) {
+      PlayerUpdated.name = document.querySelector("#editName").value;
+      PlayerUpdated.image = document.querySelector("#editImage").value;
+      PlayerUpdated.physique = document.querySelector("#Physique-modifier").value;
+      PlayerUpdated.shooting = document.querySelector("#Shoting-modifier").value;
+      PlayerUpdated.passing = document.querySelector("#Passing-modifier").value;
+      PlayerUpdated.dribbling = document.querySelector("#Dribbling-modifier").value;
+    }
+    
+  
+  
+        
+  
+   localStorage.setItem("players", JSON.stringify(players));
+   window.location.reload()
+   })
+    }else{
+      
+      
+      let goalkeepers = JSON.parse(localStorage.getItem("goalkeepers")) || [];
+
+      let goalupdated = goalkeepers.find(p => p.name ===  btn.parentElement.querySelector("#Goalkepper_name").textContent);
+      //let roleupdated=goalupdated.role
+      console.log("After",goalupdated);
+   document.querySelector("#Modifier-btn-form").addEventListener("click",()=>{
+  
+    if (goalupdated) {
+      goalupdated.name = document.querySelector("#editName").value;
+      goalupdated.image = document.querySelector("#editImage").value;
+      goalupdated.physique = document.querySelector("#Physique-modifier").value;
+      goalupdated.shooting = document.querySelector("#Shoting-modifier").value;
+      goalupdated.passing = document.querySelector("#Passing-modifier").value;
+      goalupdated.dribbling = document.querySelector("#Dribbling-modifier").value;
+    }
+    
+  
+  
+        
+  
+   localStorage.setItem("goalkeepers", JSON.stringify(goalkeepers));
+   window.location.reload()
+   })
+
+
+    }
+
+ }
 });
 
 // let btn_delete_banc=document.querySelectorAll("#delete-btn-banc");
@@ -1968,6 +2241,13 @@ closeModal.addEventListener('click', () => {
   modal.classList.add('hidden');
   window.location.reload()
 });
+document.querySelector("#closeEditModal").addEventListener('click', () => {
+  modal_modif.classList.add('hidden');
+  window.location.reload()
+});
+document.querySelector(".close_alert").addEventListener('click', () => {
+  alert_suppression.style.display='none'
+});
 
 
 
@@ -1982,3 +2262,72 @@ formation_select.addEventListener("change", () => {
   window.location.reload()
 
 });
+
+function valider(text) {
+  if (text.length === 0) {
+    return false;
+  }
+
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    if (!(char >= "A" && char <= "Z") && !(char >= "a" && char <= "z")) {
+      return false;
+    }
+  }
+  return true; 
+}
+
+
+
+// Fonction de validation des champs
+function validateInput(input) {
+
+  if (!valider(input.value.trim())) {
+    input.style.border = '2px solid red';
+    return false;
+  } else {
+    input.style.border = '2px solid green';
+    return true;
+  }
+}
+
+// Ajouter la validation sur les événements input et blur
+document.querySelectorAll('.input').forEach(input => {
+  input.addEventListener('input', () => validateInput(input));
+  input.addEventListener('blur', () => validateInput(input));
+});
+
+// Validation du formulaire avant soumission
+document.querySelector('form').addEventListener('submit', (e) => {
+  let isValid = true;
+
+  document.querySelectorAll('.input').forEach(input => {
+    if (!validateInput(input)) {
+      isValid = false;
+    }else{
+      alert("test")
+    }
+  });
+
+  if (!isValid) {
+    e.preventDefault();
+  }
+});
+
+
+function valider(text) {
+  if (text.length === 0) {
+    return false; 
+  }
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    if (
+      !(char >= "A" && char <= "Z") &&
+      !(char >= "a" && char <= "z") && 
+      !(char === " ") // Allow spaces
+    ) {
+      return false; 
+    }
+  }
+  return true;
+}
